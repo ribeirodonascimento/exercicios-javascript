@@ -167,13 +167,87 @@ if(((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0)){
 
 22)Escreva um programa que verifique se dois números são positivos.
 
-
+var num1 = parseFloat(prompt("Digite o primeiro número: "));
+var num2 = parseFloat(prompt("Digite o segundo número: "));
+if (num1 > 0 && num2 > 0) {
+    document.write("Ambos números são positivos.");
+} else {
+    document.write("Pelo menos um número não é positivo.");
 
 23)Escreva um programa que verifique se pelo menos um dos dois números é negativo.
+
+var num1 = parseFloat(prompt("Digite o primeiro número: "));
+var num2 = parseFloat(prompt("Digite o segundo número: "));
+if (num1 < 0 || num2 < 0) {
+    document.write("Pelo menos um número é negativo.");
+} else {
+    document.write("Ambos números são não negativos.");
+}
+
 24)Escreva um programa que verifique se um número é par e positivo.
+
+var num = parseFloat(prompt("Digite um número: "));
+if (num > 0 && num % 2 == 0) {
+    document.write("O número é par e positivo.");
+} else {
+    document.write("O número não é par e positivo.");
+}
+
 25)Escreva um programa que verifique se um número não é múltiplo de 5.
+
+var num = parseFloat(prompt("Digite um número: "));
+if (num % 5 != 0) {
+    document.write("O número não é múltiplo de 5.");
+} else {
+    document.write("O número é múltiplo de 5.");
+}
+
 26)Escreva um programa que verifique se um número está fora do intervalo de 1 a 10.
+
+var num = parseFloat(prompt("Digite um número: "));
+if (num < 1 || num > 10) {
+    document.write("O número está fora do intervalo.");
+} else {
+    document.write("O número está no intervalo.");
+}
+
 27)Escreva um programa que verifique se dois números são pares.
+
+var num1 = parseFloat(prompt("Digite o primeiro número: "));
+var num2 = parseFloat(prompt("Digite o segundo número: "));
+if (num1 % 2 == 0 && num2 % 2 == 0) {
+    document.write("Ambos números são pares.");
+} else {
+    document.write("Pelo menos um número não é par.");
+}
+
 28)Escreva um programa que verifique se a soma de dois números é maior que 100.
+
+var num1 = parseFloat(prompt("Digite o primeiro número: "));
+FontFaceSetLoadEvent num2 = parseFloat(prompt("Digite o segundo número: "));
+if (num1 + num2 > 100) {
+    document.write("A soma é maior que 100.");
+} else {
+    document.write("A soma não é maior que 100.");
+}
+
 29)Escreva um programa que verifique se dois números são iguais ou diferentes.
+
+var num1 = parseFloat(prompt("Digite o primeiro número: "));
+var num2 = parseFloat(prompt("Digite o segundo número: "));
+
+if (num1 == num2) {
+document.write("Os números são iguais.");
+} else {
+document.write("Os números são diferentes.");
+}
+
 30)Escreva um programa que verifique se uma string não está vazia.
+
+var texto = prompt("Digite um texto: ");
+
+if (texto != "" && texto != null && texto.trim() != "") {
+document.write("A string não está vazia.");
+} else {
+document.write("A string está vazia.");
+}
